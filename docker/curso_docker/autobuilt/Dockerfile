@@ -16,7 +16,7 @@ ENV APACHE_RUN_DIR /var/run/apache2
 ENV APACHE_LOCK_DIR /var/lock/apache2
 ENV APACHE_LOG_DIR /var/log/apache
 RUN mkdir -p $APACHE_RUN_DIR $APACHE_LOCK_DIR $APACHE_LOG_DIR
-#Contenido Web
+#Contenido Web2
 COPY index.html /var/www/html
 CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
 
